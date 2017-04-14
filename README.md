@@ -1,1 +1,0 @@
-# LS-PT-coding-challenges
