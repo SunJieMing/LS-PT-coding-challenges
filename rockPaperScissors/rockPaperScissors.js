@@ -10,6 +10,25 @@
  *              ...etc...
  *                   */
 
+// newString = str[i] + newString;
+// return str.split('').reverse().join('');
+
+const permute = (arr) => {
+  let result = [];
+
+  if (arr.length === 3) {
+    result.push(arr);
+  }
+  return result;
+  };
+
 const rockPaperScissors = () => {
-	// TODO: your solution here
-};
+  const options = ['rock ', 'paper ', 'scissors '];
+  let result = [];
+
+  options.forEach((element) => {
+    result.push(permute(element));
+  });
+
+ return result;
+}
