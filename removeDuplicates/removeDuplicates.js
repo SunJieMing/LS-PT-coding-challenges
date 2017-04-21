@@ -4,6 +4,7 @@
  *
  */
 const removeDuplicates = (arr) => {
+  const sortedArr = arr.sort();
   const result = [];
   result.push(arr[0]);
   for (let i = 1; i < arr.length; i++) {
