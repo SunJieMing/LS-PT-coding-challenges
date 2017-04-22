@@ -13,21 +13,16 @@
 // newString = str[i] + newString;
 // return str.split('').reverse().join('');
 
-const permute = (arr) => {
-  let result = [];
-
-  if (arr.length === 3) {
-    result.push(arr);
-  }
-  return result;
-  };
-
 const rockPaperScissors = () => {
   const options = ['rock ', 'paper ', 'scissors '];
   let result = [];
 
-  options.forEach((element) => {
-    result.push(permute(element));
+  options.forEach((option) => {
+    for (let i = 0; i < 3; i++) {
+			for (let j = 0; j < 3; j++) {
+				result.push([option, options[i], options[j]]);
+			}
+		}
   });
 
  return result;
