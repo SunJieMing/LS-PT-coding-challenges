@@ -13,6 +13,12 @@
 const insertionSort = (array) => {
   // Your code goes here. Feel free to add helper functions if needed.
   // Check to see if the current number is greater than or less than that on the left and greater than or less than that on the right.
-
+  for (let i = 1; i < array.length; i++) {
+    let num = array[i];
+     for (j = i - 1; array[j] > num; j--) {
+       array[j + 1] = array[j];
+     }
+    array[j + 1] = num;
+  }
   return array;
 };
