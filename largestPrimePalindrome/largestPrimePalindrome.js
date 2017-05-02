@@ -5,3 +5,41 @@
  * A palindrome is a number that is the same forwards and backwards: 121, 323, 123454321, etc.
  */
 
+const isPalindrome = (num) => {
+  // make num an array
+  let numArr = num.toString().split('');
+  let revArr = num.toString().split('');
+  revArr = revArr.reverse().join('');
+  numArr = numArr.join('');
+  return (numArr === revArr);
+ }
+
+
+const isPrime = (num) => {
+  //return true if num is prime.
+  //otherwise return false
+
+  //note: 0 and 1 are NOT considered prime numbers
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i < Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const findLargestPalindrome = (limit) => {
+  let result;
+  for (let i = 1; i < limit; i++) {
+    if (isPalindrome(i)) {
+      if (isPrime(i)) {
+        result = i;
+      }
+    }
+  }
+  return result;
+}
