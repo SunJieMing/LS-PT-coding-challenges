@@ -6,14 +6,9 @@
  */
 
 const isPalindrome = (num) => {
-  // make num an array
-  let numArr = num.toString().split('');
-  let revArr = num.toString().split('');
-  revArr = revArr.reverse().join('');
-  numArr = numArr.join('');
-  return (numArr === revArr);
+  const revNum = num.toString().split('').reverse().join('');
+  return (num === (revNum*1)); // convert revNum from String to Number
  }
-
 
 const isPrime = (num) => {
   //return true if num is prime.
