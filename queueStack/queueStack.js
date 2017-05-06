@@ -6,16 +6,16 @@ class Stack {
   constructor() {
     this.arr = [];
   }
-  enqueue(x) {
+  add(x) {
     return this.arr.push(x);
   }
-  dequeque() {
+  remove() {
     return this.arr.pop();
   }
-  length() {
+  get length() {
     return this.arr.length;
   }
-};
+}
 
 class Queue {
   constructor() {
@@ -26,12 +26,13 @@ class Queue {
     this.stackOne.add(x);
   }
   dequeue() {
-    if (!this.stackTwo.length) {
-      for (let i = 0; i < this.stackOne.length; i++) {
-        this.stackTwo.add(this.stackOne.remove());
+    if (this.stackTwo.length===0) {
+      const length = this.stackOne.length;
+      for (let i = 0; i < length; i++) {
+        const value = this.stackOne.remove();
+        this.stackTwo.add(value);
       }
     }
     return this.stackTwo.remove();
   }
 }
-const queue = new Queue();
