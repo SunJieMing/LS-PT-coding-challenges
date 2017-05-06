@@ -6,32 +6,32 @@ class Stack {
   constructor() {
     this.arr = [];
   }
-  let length = 0;
-  let stackOne = new Stack();
-  let stackTwo = new Stack();
   enqueue(x) {
-    return this.stackOne.push(x);
-    length++;
+    return this.arr.push(x);
   }
-  dequeque(x) {
-    if (stackTwo.isEmpty()) {
-      while (!stackOne.isEmpty()) {
-        stackTwo.push(stackOne.pop());
-      }
-      let temp = null;
-      if (!stackTwo.isEmpty()) {
-        temp = stackTwo.pop();
-        length--;
-      }
-      // this.arr.push(x);
-      // this.arr.pop(x);
-    }
-    // return this.arr.shift(x);
+  dequeque() {
+    return this.arr.pop();
   }
   length() {
-    return length;
+    return this.arr.length;
   }
 };
 
-const stackOne = new Stack('hello');
-const stackTwo = new Stack('howdy');
+class Queue {
+  constructor() {
+    this.stackOne = new Stack();
+    this.stackTwo = new Stack();
+  }
+  enqueue(x) {
+    this.stackOne.add(x);
+  }
+  dequeue() {
+    if (!this.stackTwo.length) {
+      for (let i = 0; i < this.stackOne.length; i++) {
+        this.stackTwo.add(this.stackOne.remove());
+      }
+    }
+    return this.stackTwo.remove();
+  }
+}
+const queue = new Queue();
