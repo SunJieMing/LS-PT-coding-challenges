@@ -4,16 +4,16 @@ $(document).ready(() => {
       $(event.target).toggleClass("blue")
     },
     mouseenter: (event) => {
-      $(event.target).css('border', '5px solid black')
+      $(event.target).css('outline', '2px solid black')
     },
     focus: (event) => {
-      $(event.target).css('border', '5px solid black')
+      $(event.target).css('outline', '2px solid black')
     },
     mouseleave: (event) => {
-      $(event.target).css('border', 'none')
+      $(event.target).css('outline', 'none')
     },
     blur: (event) => {
-      $(event.target).css('border', 'none')
+      $(event.target).css('outline', 'none')
     },
     keypress: (event) => {
       $(event.target).toggleClass("blue")
