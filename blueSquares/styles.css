@@ -16,3 +16,7 @@ body {
   height: 150px;
   background: red;
 }
+
+.blue {
+  background-color: blue;
+}
