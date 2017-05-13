@@ -27,7 +27,7 @@ const isPrime = (num) => {
   return true;
 }
 
-const findLargestPalindrome = (limit) => {
+const largestPrimePalindrome = (limit) => {
   let result;
   for (let i = 1; i < limit; i++) {
     if (isPalindrome(i)) {
