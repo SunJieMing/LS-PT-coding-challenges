@@ -28,8 +28,9 @@
      }
    }
 
-   for (let i = 0; i < result.length; i++) {
-     if (isEven(result[i])) return i;
+   for (let i = 0; i < arr.length; i++) {
+     let index = arr[i];
+     if (isEven(result[index])) return index;
    }
    return null;
  };
