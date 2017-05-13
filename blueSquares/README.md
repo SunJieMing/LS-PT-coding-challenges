@@ -1,5 +1,14 @@
 Create an index.html file, a styles.css file, and a script.js file.
 
+aspodfinaspdoginapog
+asdf
+sdaf
+dfsa
+dfsa
+fd
+fsa
+afds
+
 Add jQuery to your application.  You can use either a CDN or you can download the script file and place it in this folder.
 
 Use HTML/CSS (You can use flexbox) to display 12 red squares on the page.
