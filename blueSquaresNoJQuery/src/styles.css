@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.red {
+  padding: 5px;
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+  background: red;
+}
+
+.blue {
+  padding: 5px;
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+  background-color: blue;
+}

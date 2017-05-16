@@ -1,26 +1,11 @@
 body {
-  padding: 0;
-  margin: 0;
-}
+  display: flex; }
 
-.container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.red {
-  padding: 5px;
-  margin: 10px;
-  width: 200px;
+div {
+  background-color: red;
   height: 150px;
-  background: red;
-}
+  width: 150px;
+  margin: 5px; }
 
 .blue {
-  padding: 5px;
-  margin: 10px;
-  width: 200px;
-  height: 150px;
-  background-color: blue;
-}
+  background-color: blue; }
