@@ -16,13 +16,13 @@ const binarySearch = (nums, target) => {
 
   if (workArray[middle] === target) return middle;
 
+  if (middle === 0) return undefined;
+
   if (workArray[middle] > target) {
-    if (middle === 0) return undefined;
     return binarySearch(workArray.slice(0, middle), target);
-  }
-  else {
-    if (middle === 0) return undefined;
-    return binarySearch(workArray.slice(middle), target);
-  }
+    }
+    else {
+      return binarySearch(workArray.slice(middle), target);
+    }
   return undefined;
 };
