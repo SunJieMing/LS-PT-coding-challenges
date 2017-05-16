@@ -10,6 +10,19 @@
  *	* console.log(index); // 1
 **/
 
-const binarySearch = (nums, target) {
+const binarySearch = (nums, target) => {
+  let workArray = nums.slice();
+  let middle = Math.floor(workArray.length/2);
 
+  if (workArray[middle] === target) return middle;
+
+  if (workArray[middle] > target) {
+    if (middle === 0) return undefined;
+    return binarySearch(workArray.slice(0, middle), target);
+  }
+  else {
+    if (middle === 0) return undefined;
+    return binarySearch(workArray.slice(middle), target);
+  }
+  return undefined;
 };
