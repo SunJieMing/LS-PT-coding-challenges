@@ -10,6 +10,6 @@
  *	* console.log(index); // 1
 **/
 
-const binarySearch = (nums, target) {
+const binarySearch = (nums, target) => {
 
 };
