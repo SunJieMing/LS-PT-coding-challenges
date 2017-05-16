@@ -11,18 +11,18 @@
 **/
 
 const binarySearch = (nums, target) => {
-  let workArray = nums.slice();
-  let middle = Math.floor(workArray.length/2);
+  const arr = nums.splice();
+  let start = 0
+  let end = arr.length;
 
-  if (workArray[middle] === target) return middle;
-
-  if (middle === 0) return undefined;
-
-  if (workArray[middle] > target) {
-    return binarySearch(workArray.slice(0, middle), target);
+  while (start <= end) {
+    let middle = Math.floor((start+end)/2);
+    if (arr[middle] === target) return middle;
+    if (arr[middle] > target) {
+      end = (middle - 1);
+    } else {
+      start = (middle + 1);
     }
-    else {
-      return binarySearch(workArray.slice(middle), target);
-    }
+  }
   return undefined;
 };
