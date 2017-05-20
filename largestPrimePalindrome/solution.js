@@ -12,7 +12,7 @@ const primePalindrome = (limit) => {
 
   if (limit % 2 === 0) limit = limit-1;
   
-  for (let i = 1000; i >= 0; i -= 2) {
+  for (let i = limit; i >= 0; i -= 2) {
     if (isPalindrome(i) && isPrime(i)) return i;
   }
 };
