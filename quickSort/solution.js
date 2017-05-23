@@ -15,7 +15,7 @@ const quickSort = (arr) => {
 
   const c = [];
 
-return c.concat(quickSort(lessThanPivot), pivot, quickSort(greaterThanPivot));
+  return c.concat(quickSort(lessThanPivot), pivot, quickSort(greaterThanPivot));
 
 };
 
