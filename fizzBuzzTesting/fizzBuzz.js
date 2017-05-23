@@ -11,7 +11,8 @@
 "use strict";
 
 const fizzBuzz = (num) => {
-
+  // array math approach
+  return (((['fizz'][num % 3] || '') + (['buzz'][num % 5] || '')) || num);
 };
 
 module.exports = fizzBuzz;
