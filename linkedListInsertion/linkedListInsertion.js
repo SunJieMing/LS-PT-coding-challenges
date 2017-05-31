@@ -6,3 +6,16 @@
  * [1] -> [2] -> [2] -> [3]
  * Bonus: Write automated tests
  */
+
+
+
+
+
+/*
+  Write a function for reversing a linked list ↴ . Do it in-place ↴ .
+
+  The function will have one input: the head of the list.
+  It should return the new head of the list.
+ */
+
+ 
