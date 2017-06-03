@@ -1,0 +1,11 @@
+{
+  "name": "linkedlistcycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linkedListCycle.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
