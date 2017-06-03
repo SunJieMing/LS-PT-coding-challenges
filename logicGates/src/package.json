@@ -1,0 +1,11 @@
+{
+  "name": "logicgates",
+  "version": "1.0.0",
+  "main": "logicGates.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
