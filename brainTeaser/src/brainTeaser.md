@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 You have a five-quart jug, a three-quart jug, and an unlimited supply of water (but no measuring cups).
 How would you come up with exactly four quarts of water?
 Note that the jugs are oddly shaped, such that filling up exactly "half" of the jug would be impossible.
@@ -11,9 +10,3 @@ Note that the jugs are oddly shaped, such that filling up exactly "half" of the 
 5. Fill the five-quart jug full.
 6. Pour the five-quart jug into the three-quart jug until full.
 7. Now the five-quart jug has exactly four quarts of water.
-||||||| merged common ancestors
-=======
-You have a five-quart jug, a three-quart jug, and an unlimited supply of water (but no measuring cups).
-How would you come up with exactly four quarts of water?
-Note that the jugs are oddly shaped, such that filling up exactly "half" of the jug would be impossible.
->>>>>>> upstream/master
