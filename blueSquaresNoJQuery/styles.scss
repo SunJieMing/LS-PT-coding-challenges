@@ -1,0 +1,16 @@
+$boxDimensions: 150px;
+
+body {
+  display: flex;
+}
+
+div {
+  background-color: red;
+  height: $boxDimensions;
+  width: $boxDimensions;
+  margin: 5px;
+}
+
+.blue {
+  background-color: blue;
+}
