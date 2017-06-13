@@ -15,11 +15,11 @@
  *
  * Example code:
  *
- * const nodeA = Node('A');
- * const nodeB = nodeA.next = Node('B');
- * const nodeC = nodeB.next = Node('C');
- * const nodeD = nodeC.next = Node('D');
- * const nodeE = nodeD.next = Node('E');
+ * const nodeA = new Node('A');
+ * const nodeB = nodeA.next = new Node('B');
+ * const nodeC = nodeB.next = new Node('C');
+ * const nodeD = nodeC.next = new Node('D');
+ * const nodeE = nodeD.next = new Node('E');
  * hasCycle(nodeA); // => false
  * nodeE.next = nodeB;
  * hasCycle(nodeA); // => true
