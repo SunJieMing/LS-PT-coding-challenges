@@ -21,3 +21,43 @@
  * This is how you would structure the game objects in an actual game
  * application in Unity or another similar framework.
  */
+
+ class NPC {
+   constructor(options) {
+     this.hp = options.hp;
+     this.strength = options.strength;
+     this.speed = options.speed;
+   }
+   destroy() {
+     console.log(this.name + ' was removed from the game');
+   }
+ }
+
+ class Humanoid extends NPC {
+  constructor(options) {
+    super(options);
+    this.name = options.name;
+  }
+ }
+
+ class Elf extends Humanoid {
+   constructor(options) {
+     super(options);
+     this.visibleAtNight = options.visibleAtNight;
+   }
+   shootBow() {
+     console.log(this.name + ' shot the bow');
+   }
+ }
+
+ const foofie = new Elf({
+   visibleAtNight: true,
+   name: 'foofie',
+   speed: 10,
+   strength: 10,
+   hp: 150,
+ });
+
+ foofie.shootBow();
+ foofie.destroy();
+ 
