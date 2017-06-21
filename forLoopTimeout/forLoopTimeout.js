@@ -11,3 +11,5 @@ for (var i = 1; i <= 10; i++) {
 		console.log(i);
 	}, 0);
 }
+
+//ES6 solution: Change "var" to "let".
