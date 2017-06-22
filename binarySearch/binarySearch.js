@@ -11,7 +11,7 @@
 **/
 
 const binarySearch = (nums, target) => {
-  const arr = nums.splice();
+  const arr = nums.slice();
   let start = 0
   let end = arr.length;
 
