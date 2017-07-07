@@ -4,23 +4,39 @@ class Stack {
     this.limit = n;
   }
   push(value) {
-    const topStack = this.stacks[this.stacks.length - 1];
-    if (topStack.length === this.limit) {
+    if (this.topStack.length === this.limit) {
       this.stacks.push([value]);
       return this.length;
     }
-    topStack.push(value);
+    this.topStack.push(value);
     return this.length;
   }
   pop() {
-    const topStack = this.stacks[this.stacks.length - 1];
-    if (topStack.length === 0 && this.stacks.length > 1) {
+    if (this.topStack.length === 0 && this.stacks.length > 1) {
       this.stacks.pop();
-      return this.stacks[this.stacks.length - 1].pop();
+      return this.topStack.pop();
     }
-    return topStack.pop();
+    return this.topStack.pop();
+  }
+  get topStack() {
+    return this.stacks[this.stacks.length - 1];
   }
   get length() {
-    return (this.stacks.length - 1) * 5 + this.stacks[this.stacks.length - 1].length;
+    return (this.stacks.length - 1) * this.limit + this.stacks[this.stacks.length - 1].length;
   }
 }
+
+const stack = new Stack(2);
+stack.push('a');
+stack.push('b');
+stack.push('c');
+stack.push('d');
+stack.push('e');
+console.log(stack);
+stack.pop();
+stack.pop();
+stack.pop();
+stack.pop();
+stack.pop();
+stack.pop();
+console.log(stack);
