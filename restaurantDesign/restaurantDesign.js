@@ -4,7 +4,7 @@
  * You should have a schema for a customer, waitress/waiter, each dish,
  * a schema for the full order, a schema for a cook, etc.
  * Create a diagram for how these would interact and how this application
- * would track and coordinate effors between all of the restaurant staff.
+ * would track and coordinate efforts between all of the restaurant staff.
  *
  * If you get into designing the client then think of how a tablet app
  * at each table could allow the customers to order or how a web application

@@ -39,7 +39,8 @@ class LRUCacheItem {
 
 class LRUCache {
   constructor(limit = 10) {
-    
+    this.list = new List();
+    this.map = {};
   }
 
   size() {
@@ -51,7 +52,9 @@ class LRUCache {
   }
 
   set(key, val) {
-
+    if (this.list.hasOwnProperty(key)) {
+      
+    }
   }
 }
 

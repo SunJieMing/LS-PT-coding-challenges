@@ -1,28 +1,32 @@
 class Stack {
   constructor(n = 5) {
-    this.stacks = [[]];
-    this.limit = n;
+    this._stacks = [[]];
+    this._limit = n;
   }
+
   push(value) {
-    if (this.topStack.length === this.limit) {
-      this.stacks.push([value]);
-      return this.length;
+    if (this._topStack.length === this._limit) {
+      this._stacks.push([value]);
+      return this._length;
     }
-    this.topStack.push(value);
-    return this.length;
+    this._topStack.push(value);
+    return this._length;
   }
+
   pop() {
-    if (this.topStack.length === 0 && this.stacks.length > 1) {
-      this.stacks.pop();
-      return this.topStack.pop();
+    if (this._topStack.length === 0 && this._stacks.length > 1) {
+      this._stacks.pop();
+      return this._topStack.pop();
     }
-    return this.topStack.pop();
+    return this._topStack.pop();
   }
-  get topStack() {
-    return this.stacks[this.stacks.length - 1];
+
+  get _topStack() {
+    return this._stacks[this._stacks.length - 1];
   }
-  get length() {
-    return (this.stacks.length - 1) * this.limit + this.stacks[this.stacks.length - 1].length;
+
+  get _length() {
+    return (this._stacks.length - 1) * this._limit + this._topStack.length;
   }
 }
 
